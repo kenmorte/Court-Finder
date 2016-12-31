@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EF7219E1E17A5F1007CD771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7219D1E17A5F1007CD771 /* AppDelegate.swift */; };
+		9EF721A01E17A5F1007CD771 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7219F1E17A5F1007CD771 /* FirstViewController.swift */; };
+		9EF721A21E17A5F1007CD771 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF721A11E17A5F1007CD771 /* SecondViewController.swift */; };
+		9EF721A51E17A5F2007CD771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF721A31E17A5F2007CD771 /* Main.storyboard */; };
+		9EF721A71E17A5F2007CD771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EF721A61E17A5F2007CD771 /* Assets.xcassets */; };
+		9EF721AA1E17A5F2007CD771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF721A81E17A5F2007CD771 /* LaunchScreen.storyboard */; };
+		9EF721B51E17A5F2007CD771 /* CourtFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF721B41E17A5F2007CD771 /* CourtFinderTests.swift */; };
+		9EF721C01E17A5F2007CD771 /* CourtFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF721BF1E17A5F2007CD771 /* CourtFinderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EF721B11E17A5F2007CD771 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EF721921E17A5F0007CD771 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EF721991E17A5F0007CD771;
+			remoteInfo = CourtFinder;
+		};
+		9EF721BC1E17A5F2007CD771 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EF721921E17A5F0007CD771 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EF721991E17A5F0007CD771;
+			remoteInfo = CourtFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9EF7219A1E17A5F1007CD771 /* CourtFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourtFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EF7219D1E17A5F1007CD771 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9EF7219F1E17A5F1007CD771 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		9EF721A11E17A5F1007CD771 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9EF721A41E17A5F2007CD771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9EF721A61E17A5F2007CD771 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9EF721A91E17A5F2007CD771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9EF721AB1E17A5F2007CD771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EF721B01E17A5F2007CD771 /* CourtFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourtFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EF721B41E17A5F2007CD771 /* CourtFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtFinderTests.swift; sourceTree = "<group>"; };
+		9EF721B61E17A5F2007CD771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EF721BB1E17A5F2007CD771 /* CourtFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourtFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EF721BF1E17A5F2007CD771 /* CourtFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtFinderUITests.swift; sourceTree = "<group>"; };
+		9EF721C11E17A5F2007CD771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EF721971E17A5F0007CD771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF721AD1E17A5F2007CD771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF721B81E17A5F2007CD771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EF721911E17A5F0007CD771 = {
+			isa = PBXGroup;
+			children = (
+				9EF7219C1E17A5F1007CD771 /* CourtFinder */,
+				9EF721B31E17A5F2007CD771 /* CourtFinderTests */,
+				9EF721BE1E17A5F2007CD771 /* CourtFinderUITests */,
+				9EF7219B1E17A5F1007CD771 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9EF7219B1E17A5F1007CD771 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EF7219A1E17A5F1007CD771 /* CourtFinder.app */,
+				9EF721B01E17A5F2007CD771 /* CourtFinderTests.xctest */,
+				9EF721BB1E17A5F2007CD771 /* CourtFinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EF7219C1E17A5F1007CD771 /* CourtFinder */ = {
+			isa = PBXGroup;
+			children = (
+				9EF7219D1E17A5F1007CD771 /* AppDelegate.swift */,
+				9EF7219F1E17A5F1007CD771 /* FirstViewController.swift */,
+				9EF721A11E17A5F1007CD771 /* SecondViewController.swift */,
+				9EF721A31E17A5F2007CD771 /* Main.storyboard */,
+				9EF721A61E17A5F2007CD771 /* Assets.xcassets */,
+				9EF721A81E17A5F2007CD771 /* LaunchScreen.storyboard */,
+				9EF721AB1E17A5F2007CD771 /* Info.plist */,
+			);
+			path = CourtFinder;
+			sourceTree = "<group>";
+		};
+		9EF721B31E17A5F2007CD771 /* CourtFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EF721B41E17A5F2007CD771 /* CourtFinderTests.swift */,
+				9EF721B61E17A5F2007CD771 /* Info.plist */,
+			);
+			path = CourtFinderTests;
+			sourceTree = "<group>";
+		};
+		9EF721BE1E17A5F2007CD771 /* CourtFinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9EF721BF1E17A5F2007CD771 /* CourtFinderUITests.swift */,
+				9EF721C11E17A5F2007CD771 /* Info.plist */,
+			);
+			path = CourtFinderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EF721991E17A5F0007CD771 /* CourtFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EF721C41E17A5F2007CD771 /* Build configuration list for PBXNativeTarget "CourtFinder" */;
+			buildPhases = (
+				9EF721961E17A5F0007CD771 /* Sources */,
+				9EF721971E17A5F0007CD771 /* Frameworks */,
+				9EF721981E17A5F0007CD771 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CourtFinder;
+			productName = CourtFinder;
+			productReference = 9EF7219A1E17A5F1007CD771 /* CourtFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EF721AF1E17A5F2007CD771 /* CourtFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EF721C71E17A5F2007CD771 /* Build configuration list for PBXNativeTarget "CourtFinderTests" */;
+			buildPhases = (
+				9EF721AC1E17A5F2007CD771 /* Sources */,
+				9EF721AD1E17A5F2007CD771 /* Frameworks */,
+				9EF721AE1E17A5F2007CD771 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EF721B21E17A5F2007CD771 /* PBXTargetDependency */,
+			);
+			name = CourtFinderTests;
+			productName = CourtFinderTests;
+			productReference = 9EF721B01E17A5F2007CD771 /* CourtFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9EF721BA1E17A5F2007CD771 /* CourtFinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EF721CA1E17A5F2007CD771 /* Build configuration list for PBXNativeTarget "CourtFinderUITests" */;
+			buildPhases = (
+				9EF721B71E17A5F2007CD771 /* Sources */,
+				9EF721B81E17A5F2007CD771 /* Frameworks */,
+				9EF721B91E17A5F2007CD771 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EF721BD1E17A5F2007CD771 /* PBXTargetDependency */,
+			);
+			name = CourtFinderUITests;
+			productName = CourtFinderUITests;
+			productReference = 9EF721BB1E17A5F2007CD771 /* CourtFinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EF721921E17A5F0007CD771 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Christian Morte";
+				TargetAttributes = {
+					9EF721991E17A5F0007CD771 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					9EF721AF1E17A5F2007CD771 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9EF721991E17A5F0007CD771;
+					};
+					9EF721BA1E17A5F2007CD771 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9EF721991E17A5F0007CD771;
+					};
+				};
+			};
+			buildConfigurationList = 9EF721951E17A5F0007CD771 /* Build configuration list for PBXProject "CourtFinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EF721911E17A5F0007CD771;
+			productRefGroup = 9EF7219B1E17A5F1007CD771 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EF721991E17A5F0007CD771 /* CourtFinder */,
+				9EF721AF1E17A5F2007CD771 /* CourtFinderTests */,
+				9EF721BA1E17A5F2007CD771 /* CourtFinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EF721981E17A5F0007CD771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF721AA1E17A5F2007CD771 /* LaunchScreen.storyboard in Resources */,
+				9EF721A71E17A5F2007CD771 /* Assets.xcassets in Resources */,
+				9EF721A51E17A5F2007CD771 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF721AE1E17A5F2007CD771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF721B91E17A5F2007CD771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EF721961E17A5F0007CD771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF721A21E17A5F1007CD771 /* SecondViewController.swift in Sources */,
+				9EF7219E1E17A5F1007CD771 /* AppDelegate.swift in Sources */,
+				9EF721A01E17A5F1007CD771 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF721AC1E17A5F2007CD771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF721B51E17A5F2007CD771 /* CourtFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF721B71E17A5F2007CD771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF721C01E17A5F2007CD771 /* CourtFinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EF721B21E17A5F2007CD771 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EF721991E17A5F0007CD771 /* CourtFinder */;
+			targetProxy = 9EF721B11E17A5F2007CD771 /* PBXContainerItemProxy */;
+		};
+		9EF721BD1E17A5F2007CD771 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EF721991E17A5F0007CD771 /* CourtFinder */;
+			targetProxy = 9EF721BC1E17A5F2007CD771 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9EF721A31E17A5F2007CD771 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EF721A41E17A5F2007CD771 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9EF721A81E17A5F2007CD771 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EF721A91E17A5F2007CD771 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EF721C21E17A5F2007CD771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EF721C31E17A5F2007CD771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EF721C51E17A5F2007CD771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CourtFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Christian-Morte.CourtFinder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9EF721C61E17A5F2007CD771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CourtFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Christian-Morte.CourtFinder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9EF721C81E17A5F2007CD771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CourtFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Christian-Morte.CourtFinderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CourtFinder.app/CourtFinder";
+			};
+			name = Debug;
+		};
+		9EF721C91E17A5F2007CD771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CourtFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Christian-Morte.CourtFinderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CourtFinder.app/CourtFinder";
+			};
+			name = Release;
+		};
+		9EF721CB1E17A5F2007CD771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CourtFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Christian-Morte.CourtFinderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CourtFinder;
+			};
+			name = Debug;
+		};
+		9EF721CC1E17A5F2007CD771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CourtFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Christian-Morte.CourtFinderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CourtFinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EF721951E17A5F0007CD771 /* Build configuration list for PBXProject "CourtFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EF721C21E17A5F2007CD771 /* Debug */,
+				9EF721C31E17A5F2007CD771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EF721C41E17A5F2007CD771 /* Build configuration list for PBXNativeTarget "CourtFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EF721C51E17A5F2007CD771 /* Debug */,
+				9EF721C61E17A5F2007CD771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9EF721C71E17A5F2007CD771 /* Build configuration list for PBXNativeTarget "CourtFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EF721C81E17A5F2007CD771 /* Debug */,
+				9EF721C91E17A5F2007CD771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9EF721CA1E17A5F2007CD771 /* Build configuration list for PBXNativeTarget "CourtFinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EF721CB1E17A5F2007CD771 /* Debug */,
+				9EF721CC1E17A5F2007CD771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EF721921E17A5F0007CD771 /* Project object */;
+}
