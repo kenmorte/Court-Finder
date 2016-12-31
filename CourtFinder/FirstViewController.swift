@@ -26,24 +26,6 @@ class MapViewController: UIViewController {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
-        
-        let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTableViewController")
-        resultSearchController = UISearchController(searchResultsController: locationSearchTable)
-        
-        // Embed search bar within navigation bar
-        let searchBar = resultSearchController!.searchBar
-        searchBar.sizeToFit()
-        searchBar.placeholder = "Search for courts"
-        mapView.addSubview((resultSearchController?.searchBar)!)
-        
-        // Determines whether navigation bar disappears when search results shown
-        resultSearchController?.hidesNavigationBarDuringPresentation = false
-        
-        // Determines whether background dimmed when search results shown
-        resultSearchController?.dimsBackgroundDuringPresentation = true
-        
-        // IMPORTANT: Limits overlap area to just View Controller's frame
-        definesPresentationContext = true
     }
 
     override func didReceiveMemoryWarning() {

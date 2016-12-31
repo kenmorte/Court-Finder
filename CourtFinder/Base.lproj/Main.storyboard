@@ -25,11 +25,17 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="590"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rPY-UT-PLO">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="first" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="locationSearchBar" destination="rPY-UT-PLO" id="CcP-DX-5Wz"/>
                         <outlet property="mapView" destination="1hO-C4-cyr" id="3fV-l8-ayX"/>
                         <outlet property="searchDisplayController" destination="W1L-bq-K2V" id="QbF-tT-rWj"/>
                     </connections>
@@ -49,6 +55,7 @@
         <!--Location Search Table View Controller-->
         <scene sceneID="RqI-fg-5Vf">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kP6-s8-m8J" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="LocationSearchTableViewController" id="mnO-tz-AHF" customClass="LocationSearchTableViewController" customModule="CourtFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="5r9-if-jpp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -86,7 +93,6 @@
                         </connections>
                     </tableView>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kP6-s8-m8J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1478" y="-321"/>
         </scene>
