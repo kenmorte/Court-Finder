@@ -12,11 +12,11 @@ import MapKit
 class MapViewController: UIViewController {
     
     let locationManager = CLLocationManager()
+    let courtSearchViewController: CourtSearchViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CourtSearchViewController") as! CourtSearchViewController
     
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var locationSearchBar: UISearchBar!
-    
-    var resultSearchController: UISearchController? = nil
+    @IBOutlet weak var mainCourtSearchBar: UISearchBar!
+    @IBOutlet weak var mainCourtSearchFilterButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +26,9 @@ class MapViewController: UIViewController {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
+        
+        mainCourtSearchBar.delegate = self
+        courtSearchViewController.setMapViewController(mapViewController: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,13 +51,21 @@ extension MapViewController : CLLocationManagerDelegate {
             let region = MKCoordinateRegion(center: location.coordinate, span:span)
             
             // Set the initial zoomed region of the user's current location
-            mapView.setRegion(region, animated: false)
+            mapView.setRegion(region, animated: true)
             print("location:: \(location)")
         }
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("error:: \(error)")
+    }
+}
+
+extension MapViewController : UISearchBarDelegate {
+    internal func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        NSLog("did begin editing")
+        courtSearchViewController.setMapViewController(mapViewController: self)
+        courtSearchViewController.display()
     }
 }
 
