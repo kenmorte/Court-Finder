@@ -1,0 +1,92 @@
+{
+	"_id" : "ObjectId(COURT_ID)",
+	"name": "North Park",
+	"address": "80 Descanso Dr, San Jose, CA 95051",
+	"dateAdded": "January 1, 2017 8:54AM PT",
+
+	"mainPhoto": "INSERT_IMAGE_OBJECT_HERE",
+	"photos": [
+		"INSERT_IMAGE_OBJECT_HERE",
+		"INSERT_IMAGE_OBJECT_HERE"
+	],
+
+	"avgRating": 3.42424,
+	"numberOfRatings": 75,
+
+	"moreInfo": {
+		"hours": {
+				"Monday": {"start": "9:00AM PT", "end": "9:00PM PT"},
+				"Tuesday": {"start": "9:00AM PT", "end": "9:00PM PT"},
+				"Wednesday": {"start": "9:00AM PT", "end": "9:00PM PT"},
+				"Thursday": {"start": "9:00AM PT", "end": "9:00PM PT"},
+				"Friday": {"start": "9:00AM PT", "end": "9:00PM PT"},
+				"Saturday": {"start": "closed", "end": "closed"},
+				"Sunday": {"start": "closed", "end": "closed"}
+		},
+		"type": "Indoor",
+		"status": "Private (Gym membership)",
+		"hasBathroom": "Yes",
+		"hasFountain": "Yes",
+		"hasWifi": "No"
+	},
+
+	"whoIsHere": [
+		{
+			"userId": "OBJECTID(USER_ID)",
+			"name": "Christian Morte",
+			"photo": "INSERT_IMAGE_OBJECT_HERE",
+			"since": "January 1, 2017 10:45AM PT"
+		},
+		{
+			"userId": "OBJECTID(USER_ID)",
+			"name": "Brandon Beleche",
+			"photo": "INSERT_IMAGE_OBJECT_HERE",
+			"since": "January 1, 2017 12:01PM PT"
+		}
+	],
+
+	"hotTimes": [
+		{
+			"day": "Monday",
+			"startTime": "3:00PM PT",
+			"endTime": "5:00PM PT",
+			"avgPlayers": 17.75
+		},
+		{
+			"day": "Wednesday",
+			"startTime": "5:00PM PT",
+			"endTime": "6:00PM PT",
+			"avgPlayers": 9.44
+		},
+		{
+			"day": "Saturday",
+			"startTime": "8:00AM PT",
+			"endTime": "12:00PM PT",
+			"avgPlayers": 15.31
+		}
+	],
+
+	"reviews": [
+		{
+			"userId": "OBJECTID(USER_ID)",
+			"name": "Christian Morte",
+			"rating": 3,
+			"postedOn": "January 3, 2017 8:00PM PT",
+			"message": "This court is a great place to play in! Lots of wifi, and always clean floor!"
+		},
+		{
+			"userId": "OBJECTID(USER_ID)",
+			"name": "Brandon Beleche",
+			"rating": 4,
+			"postedOn": "January 3, 2017 8:00PM PT",
+			"message": "This court is a great place to play in! Lots of wifi, and always clean floor!"
+		}
+	],
+
+	"followedBy": [
+		"OBJECTID(USER_ID)",
+		"OBJECTID(USER_ID)",
+		"OBJECTID(USER_ID)",
+		"OBJECTID(USER_ID)"
+	]
+}
