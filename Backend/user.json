@@ -1,0 +1,50 @@
+{
+	"_id": "ObjectId(USER_ID)",
+
+	"email": "kenmorte@uci.edu",
+	"password": "SOME_ENCRYPTED_PASSWORD_HERE",
+
+	"name": "Christian Morte",
+	"height": "5' 6\"",
+	"position": "Point Guard",
+	"profileImage": "INSERT_IMAGE_OBJECT_HERE",
+	"DOB": "1/2/1996",
+
+	"myCourts": [
+		"ObjectId(COURT_ID_1)",
+		"ObjectId(COURT_ID_2)"
+	],
+
+	"notifications": [
+		{
+			"type": "COURT_NOTIFICATION",
+			"subtype": "nearby_court_add",
+			"message": "A new court (Riverview Court) has been added nearby you.",
+			"courtID": "ObjectId(COURT_ID)"
+		},
+		{
+			"type": "COURT_NOTIFICATION",
+			"subtype": "home_court_check_ins",
+			"message": "There are 10 people in your Home Court (North Park)",
+			"courtID": "ObjectId(COURT_ID)"
+		},
+		{
+			"type": "COURT_NOTIFICATION",
+			"subtype": "nearby_court_check_ins",
+			"message": "A court nearby (City Sports - Brokaw) has 18 people checked in.",
+			"courtID": "ObjectId(COURT_ID)"
+		},
+		{
+			"type": "FRIEND_NOTIFICATION",
+			"subtype": "friend_check_in",
+			"message": "Brandon Beleche has checked in City Sports - Brokaw",
+			"userID": "ObjectId(USER_ID)",
+			"courtID": "ObjectId(COURT_ID)"
+		}
+	],
+
+	"friends": [
+		"ObjectId(USER_ID)",
+		"ObjectId(USER_ID)"
+	]
+}
