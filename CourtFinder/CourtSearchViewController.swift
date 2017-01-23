@@ -24,12 +24,20 @@ class CourtSearchViewController : UIViewController {
     var mapViewController: MapViewController? = nil
     var mainCourtSearchBarFrame: CGRect? = nil
     
+    // MARK: - Override vars
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     // MARK: - Init methods
     override func viewDidLoad() {
         super.viewDidLoad()
         courtSearchBar.delegate = self
         courtSearchTableView.delegate = self
         courtSearchTableView.dataSource = self
+        
+        courtCancelButton.alpha = 0
+        courtSearchButton.alpha = 0
         
         print("Court Search View Controller did load")
     }
@@ -61,7 +69,6 @@ class CourtSearchViewController : UIViewController {
     func hide() {
         if (mapViewController != nil) {
             mapViewController?.mainCourtSearchBar.text = courtSearchBar.text
-            mapViewController?.mainCourtSearchFilterButton.alpha = 1
             
             courtCancelButton.alpha = 0
             courtSearchButton.alpha = 0
@@ -74,7 +81,6 @@ class CourtSearchViewController : UIViewController {
     // MARK: Display/Hide Method Helpers
     private func animateDisplay() {
         // TODO: Better transition from main search bar to court search bar...
-        mapViewController?.mainCourtSearchFilterButton.alpha = 0
         
         mapViewController?.addChildViewController(self)
         view.frame = (mapViewController?.view.frame)!

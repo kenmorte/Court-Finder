@@ -18,6 +18,11 @@ class MapViewController: UIViewController {
     @IBOutlet weak var mainCourtSearchBar: UISearchBar!
     @IBOutlet weak var mainCourtSearchFilterButton: UIButton!
     
+    // MARK: - Override vars
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
